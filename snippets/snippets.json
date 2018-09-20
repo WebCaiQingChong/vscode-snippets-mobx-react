@@ -140,7 +140,7 @@
     "body": "this.state.$0"
   },
   "reactMobxComponent": {
-    "prefix": "rmc",
+    "prefix": "rmcp",
     "body": [
       "import React, { Component } from 'react'",
       "import PropTypes from 'prop-types'",
@@ -165,8 +165,8 @@
     ],
     "description": "Creates a React component class with PropTypes and mobx observer inject"
   },
-  "mobxStore": {
-    "prefix": "ms",
+  "reactmobxStore": {
+    "prefix": "rmsc",
     "body": [
       "import { observable, action, configure, runInAction } from 'mobx'",
       "",

@@ -2,7 +2,7 @@
     "name": "vscode-snippets-mobx-react",
     "displayName": "vscode-snippets-mobx-react",
     "description": "a snipperts at mobx react",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "qingchong",
     "engines": {
         "vscode": "^1.27.0"
@@ -14,9 +14,6 @@
         "type": "git",
         "url": "https://github.com/WebCaiQingChong/vscode-snippets-mobx-react"
     },
-    "activationEvents": [
-        "onCommand:extension.sayHello"
-    ],
     "main": "./extension",
     "contributes": {
         "contributes": {
