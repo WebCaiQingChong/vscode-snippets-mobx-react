@@ -2,7 +2,7 @@
     "name": "vscode-snippets-mobx-react",
     "displayName": "vscode-snippets-mobx-react",
     "description": "a snipperts at mobx react",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "qingchong",
     "engines": {
         "vscode": "^1.27.0"
@@ -20,6 +20,18 @@
             "snippets": [
                 {
                     "language": "javascript",
+                    "path": "./snippets/snippets.json"
+                },
+                {
+                    "language": "javascriptreact",
+                    "path": "./snippets/snippets.json"
+                },
+                {
+                    "language": "typescript",
+                    "path": "./snippets/snippets.json"
+                },
+                {
+                    "language": "typescriptreact",
                     "path": "./snippets/snippets.json"
                 }
             ]
