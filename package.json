@@ -2,7 +2,7 @@
     "name": "vscode-snippets-mobx-react",
     "displayName": "vscode-snippets-mobx-react",
     "description": "a snipperts at mobx react",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "qingchong",
     "engines": {
         "vscode": "^1.27.0"
