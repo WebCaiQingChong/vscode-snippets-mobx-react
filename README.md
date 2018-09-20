@@ -45,7 +45,7 @@ create code snippets at mobx react
 | `state→`    | `this.state.stateName`                                                              |
 
 
-### `rmc`
+### `rmcp`
 
 ```javascript
 import React, { Component } from 'react'
@@ -64,7 +64,7 @@ export default class Add extends Component {
 
 ```
 
-### `ms`
+### `rmsc`
 
 ```javascript
 import { observable, action, configure, runInAction } from 'mobx'
