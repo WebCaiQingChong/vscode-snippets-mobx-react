@@ -1,6 +1,7 @@
 # vscode-snippets-mobx-react README
 
 create code snippets at mobx react
+now it can support rematch!
 
 ## normal
 
