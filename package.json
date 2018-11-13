@@ -2,7 +2,7 @@
   "name": "vscode-snippets-mobx-react",
   "displayName": "Mobx/Rematch React Snippets",
   "description": "a snipperts at mobx react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "qingchong",
   "engines": {
     "vscode": "0.10.x"

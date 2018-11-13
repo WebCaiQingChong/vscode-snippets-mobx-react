@@ -213,11 +213,11 @@
   "reactComponentWithStyle": {
     "prefix": "rcws",
     "body": [
-      "import React, { Component } from 'react'",
+      "import React from 'react'",
       "import PropTypes from 'prop-types'",
-      "import Style from './index.less'",
+      "import Style from './$1.less'",
       "",
-      "export default class $0 extends Component {",
+      "export default class $1 extends React.Component {",
       "  static propTypes = {",
       "  }",
       "  constructor() {",
@@ -244,13 +244,13 @@
   "reactPageWithStyleAndRematch": {
     "prefix": "rpsr",
     "body": [
-      "import React, { Component } from 'react'",
+      "import React from 'react'",
       "import { connect } from 'react-redux'",
       "import PropTypes from 'prop-types'",
-      "import Style from './index.less'",
+      "import Style from './$1.less'",
       "import { createContainer } from 'utils/hoc'",
       "",
-      "class $1 extends Component {",
+      "class $1 extends React.Component {",
       "  static propTypes = {",
       "    actions: PropTypes.object.isRequired,",
       "  }",
