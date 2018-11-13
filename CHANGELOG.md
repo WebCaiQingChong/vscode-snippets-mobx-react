@@ -6,3 +6,4 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [Unreleased]
 - Initial release
 - add rematch snippets
+- fix bug in previous version('rpsr' order does not has Style)
