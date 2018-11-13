@@ -196,7 +196,6 @@
       "@observer",
       "export default class $1 extends Component {",
       "  static propTypes = {",
-      "    ${1:prop}: ${2:PropTypes}",
       "  }",
       "",
       "  render() {",

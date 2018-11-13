@@ -82,4 +82,119 @@ export default class A {
 }
 
 ```
+
+### `rmcpf`
+
+```javascript
+import React, { Component, Fragment } from 'react'
+import PropTypes from 'prop-types'
+import { observer, inject } from 'mobx-react'
+
+@inject('store')
+@observer
+export default class $1 extends Component {
+  static propTypes = {
+  }
+  render() {
+    return (
+      <Fragment>
+      </Fragment>
+    )
+  }
+}
+
+```
+
+### `rcws`
+
+```javascript
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import Style from './index.less'
+
+export default class $0 extends Component {
+  static propTypes = {
+  }
+  constructor() {
+    super()
+    Style.use()
+  }
+
+  componentWillUnmount () {
+    Style.unuse()
+  }
+  render() {
+    return (
+      <>
+      </>
+    )
+  }
+}
+
+```
+
+### `rpsr`
+
+```javascript
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
+import { createContainer } from 'utils/hoc'
+
+class $1 extends Component {
+  static propTypes = {
+    actions: PropTypes.object.isRequired,
+  }
+  state = {}
+  constructor (props) {
+    super(props)
+    //this.props.actions.get()
+  }
+  
+  render () {
+    return (
+      <>
+        <div />
+      </>
+    )
+  }
+}
+
+const mapState = state => ({
+  error: state.common.error,
+})
+
+const mapDispatch = dispatch => ({
+  actions: {
+    // createDataTrack: dispatch.common.createDataTrack,
+    get: dispatch.idx.get,
+  },
+})
+
+export default createContainer(
+  connect(
+    mapState,
+    mapDispatch
+  )($1)
+)
+
+```
+
+
+### `ratp`
+
+```javascript
+import request from 'utils/fetch'
+export default {
+  get (params) {
+    return request.get('/api/cola/1.0/charge/info', params)
+  },
+  post (params) {
+    return request.get('/lhc/1.0/memberRedeemCode/exchange', params)
+  },
+}
+
+```
+
+
 **Enjoy!**
