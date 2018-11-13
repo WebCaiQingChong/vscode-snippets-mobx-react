@@ -3,9 +3,10 @@ const semver = require('semver')
 const inquirer = require('inquirer')
 const chalk = require('chalk')
 const fs = require('fs')
-let config = fs.readFileSync('package.json', {
+let config = JSON.parse(fs.readFileSync('package.json', {
   encoding: 'utf-8'
-})
+}))
+console.log(config.version)
 const newVersionType = {
   type: 'list',
   name: 'newVersion',
@@ -47,9 +48,6 @@ const run = async () => {
     shell.exec('git checkout master')
     shell.exec('git pull origin master')
     shell.exec(`npm version ${version} --no-git-tag-version`)
-    shell.exec(
-      'rm -rf index.html && ./node_modules/.bin/webpack --config webpack.production.config.js --progress'
-    )
     shell.exec('git add . -A')
     shell.exec(`git commit -m "${emojiType}   ${commitMessage}"`)
     shell.exec(`git tag -a v${version} -m "build: ${version}"`)
