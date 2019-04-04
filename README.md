@@ -107,6 +107,7 @@ export default class $1 extends Component {
 
 ### `rcws`
 
+
 ```javascript
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
@@ -187,10 +188,10 @@ export default createContainer(
 import request from 'utils/fetch'
 export default {
   get (params) {
-    return request.get('/api/cola/1.0/charge/info', params)
+    return request.get('your api url', params)
   },
   post (params) {
-    return request.get('/lhc/1.0/memberRedeemCode/exchange', params)
+    return request.post('your api url', params)
   },
 }
 

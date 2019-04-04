@@ -6,7 +6,6 @@ const fs = require('fs')
 let config = JSON.parse(fs.readFileSync('package.json', {
   encoding: 'utf-8'
 }))
-console.log(config.version)
 const newVersionType = {
   type: 'list',
   name: 'newVersion',
