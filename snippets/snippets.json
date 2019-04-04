@@ -324,20 +324,5 @@
       "}"
     ],
     "description": "Creates a Rematch model"
-  },
-  "rematchActionsTemplateWithPromise": {
-    "prefix": "ratp",
-    "body": [
-      "import request from 'utils/fetch'",
-      "export default {",
-      "  get (params) {",
-      "    return request.get('your api url', params)",
-      "  },",
-      "  post (params) {",
-      "    return request.get('your api url', params)",
-      "  },",
-      "}"
-    ],
-    "description": "Creates a Rematch Actions with promise"
   }
 }

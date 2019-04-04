@@ -180,22 +180,4 @@ export default createContainer(
 )
 
 ```
-
-
-### `ratp`
-
-```javascript
-import request from 'utils/fetch'
-export default {
-  get (params) {
-    return request.get('your api url', params)
-  },
-  post (params) {
-    return request.post('your api url', params)
-  },
-}
-
-```
-
-
 **Enjoy!**
