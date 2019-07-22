@@ -1,0 +1,14 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  "prettier.eslintIntegration": true,
+  "prettier.stylelintIntegration": true,
+  "eslint.enable": true,
+  "files.associations": {
+    "*.css": "less"
+  },
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "typescript.validate.enable": false,
+  "javascript.validate.enable": false
+}

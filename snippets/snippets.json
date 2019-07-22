@@ -324,5 +324,70 @@
       "}"
     ],
     "description": "Creates a Rematch model"
+  },
+  "taroReactHooksPage": {
+    "prefix": "trhp",
+    "body": [
+      "import { View, Navigator, Image, Text } from '@tarojs/components'",
+      "import { Container } from '@/components'",
+      "import { useStoreState, useStoreActions } from '@/peasy'",
+      "import { useEffect } from '@/hooks'",
+      "import global from '@/global'",
+      "import { dealParams } from '@/utils/index'",
+      "import './index.less'",
+      "",
+      "export default $0 () {",
+      "  const data = useStoreState(state => state.xxx)",
+      "  const actions = useStoreActions(actions => actions.xxx)",
+      "",
+      "  useEffect(fn, []) ",
+      "  return (",
+      "    <Container loading={data.xx} error={data.error} force={false} nav clear={actions._setError}>",
+      "    </Container>",
+      "  )",
+      "}",
+      "$0.config = {}"
+    ],
+    "description": "create taro react hooks page"
+  },
+  "taroReactComponent": {
+    "prefix": "trcm",
+    "body": [
+      "import { View, Block } from '@tarojs/components'",
+      "import PropTypes from 'prop-types'",
+      "import './index.less'",
+      "",
+      "export default $0 () {",
+      "  return (",
+      "    <Container loading={!form} error={error} force={false} nav clear={setError}>",
+      "    </Container>",
+      "  )",
+      "}",
+      "$0.propTypes = {}",
+      "$0.defaultProps = {}"
+    ],
+    "description": "create taro react functional component"
+  },
+  "taroReactModels": {
+    "prefix": "trms",
+    "body": [
+      "import {} from '@/services/'",
+      "export default {",
+      "  form: null,",
+      "  sync: {",
+      "    updateForm (payload) {",
+      "      this.form = payload",
+      "    },",
+      "  },",
+      "  async: {",
+      "    async getDetail (payload) {",
+      "      // action 第二个参数 options 默认为{proxy: true}",
+      "      const data = await fetchGetDetail(payload)",
+      "      this.form = data",
+      "    },",
+      "  },",
+      "}"
+    ],
+    "description": "create taro react redux model"
   }
 }

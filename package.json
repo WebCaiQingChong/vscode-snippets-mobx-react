@@ -1,8 +1,8 @@
 {
   "name": "vscode-snippets-mobx-react",
-  "displayName": "Mobx/Rematch React Snippets",
-  "description": "a snipperts at mobx react",
-  "version": "1.0.5",
+  "displayName": "Mobx/Rematch React Snippets and taro react hooks",
+  "description": "a snipperts at mobx react, rematch react, taro react hooks",
+  "version": "1.1.0",
   "publisher": "qingchong",
   "engines": {
     "vscode": "0.10.x"
