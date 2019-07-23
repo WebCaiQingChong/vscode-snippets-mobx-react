@@ -175,17 +175,13 @@ import { useEffect } from '@/hooks'
 import global from '@/global'
 import { dealParams } from '@/utils/index'
 import './index.less'
-export default User () {
-  const data = useStoreState(state => state.xxx)
-  const actions = useStoreActions(actions => actions.xxx)
+export default function User() {
+  const storeProps = useStoreState(state => state.xxx)
+  const storeActions = useStoreActions(actions => actions.xxx)
   useEffect(fn, [])
-  return (
-    <Container loading={data.xx} error={data.error} force={false} nav clear={actions._setError}>
-    </Container>
-  )
+  return <Container loading={storeProps.loading} error={storeProps.error} force={false} nav={{title: '小电'}} clear={storeActions._setError} />
 }
 User.config = {}
-
 ```
 
 ### `trcm`
