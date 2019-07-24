@@ -341,7 +341,7 @@
       "  const storeActions = useStoreActions(actions => actions.xxx)",
       "",
       "  return (",
-      "    <Container loading={storeProps.xx} error={storeProps.error} force={false} nav={{title: '小电'} clear={storeActions._setError}>",
+      "    <Container loading={storeProps.xx} error={storeProps.error} force={false} nav={{title: '小电'}} clear={storeActions._setError}>",
       "    </Container>",
       "  )",
       "}",
